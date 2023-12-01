@@ -1,0 +1,15 @@
+[package]
+name = "tokio-serde-postcard"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/heilhead/tokio-serde-postcard.git"
+homepage = "https://github.com/heilhead/tokio-serde-postcard.git"
+description = "`tokio-serde` transport based on `postcard` format"
+
+[dependencies]
+bytes = "1.5"
+postcard = { version = "1.0", default-features = false, features = ["alloc", "use-std"] }
+serde = "1.0"
+tokio-serde = "0.8"
